@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" hrf="style.css">
+    <title>Login</title>
+</head>
+    
+<script>
+    function check(form){
+        if(form.uname.value == "player" && form.pword.value == "1234"){
+                window.close("index.html")
+                window.open("home.html")
+        }
+        else{
+            alert("Error; Username and Password doesn't match")
+        }
+    }
+
+</script>
+<body>
+    <h2>Log in</h2>
+    <form>
+        <label>Name</label>
+        <input type="text" name="uname" placeholder="Username"> <br>
+
+        <label>Password</label>
+        <input type="Password" name="pword" placeholder="Password"> <br>
+
+        <button type="submit" onclick="check(this.form)"> Login </button>
+        <a hrf="signup.html" class="ca">Create an account</a>
+    </form>
+</body>
+</html>
